@@ -23,7 +23,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #000000a7; /* Dark green */
-    padding: 10px 70px;
+    padding: 0px 20px 0px 9px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -34,7 +34,7 @@
   .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1px;
   }
   
   .logo img {
@@ -55,7 +55,7 @@
   }
   
   .nav-links a:hover {
-    color: #ffd700; /* Yellow hover effect */
+    color: #ff8000; /* Orange hover effect */
   }
   
   .profile-icon {
@@ -95,7 +95,7 @@
   }
   
   .cta-button {
-    background-color: #ffd700; /* Yellow button */
+    background-color: #ff8000; /* Yellow button */
     border: none;
     color: black;
     padding: 15px 30px;
@@ -106,7 +106,7 @@
   }
   
   .cta-button:hover {
-    background-color: #f0c400;
+    background-color: #e5c69e;
   }
   
   /* Background Overlay */

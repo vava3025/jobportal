@@ -4,10 +4,13 @@ import React from "react";
 import instagram_icon from '../assets/instagram-logo-2.png'
 import google from '../assets/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png'
 import facebook from '../assets/facebook-logo-clipart-png-format.png'
+import footerlog from '../assets/orangelogo2.png'
+
+import { width } from "@mui/system";
 const Footer = () => {
   const footerStyle = {
-    backgroundColor: "#000000a7",
-    padding: "40px 20px",
+    backgroundColor: "#ffff",
+    padding: "40px 0px 20px 90px",
     textAlign: "center",
     fontFamily: "Arial, sans-serif",
     color: "#333",
@@ -15,11 +18,12 @@ const Footer = () => {
 
   const logoSection = {
     textAlign: "center",
-    marginBottom: "20px",
+    marginBottom: "0px",
   };
 
   const logoImg = {
-    maxWidth: "80px",
+    height:"170px",
+    width:"170px",
     marginBottom: "10px",
   };
 
@@ -49,7 +53,7 @@ const Footer = () => {
   };
 
   const socialIcons = {
-    marginTop: "20px",
+    marginTop: "40px",
     display: "flex",
     justifyContent: "center",
     gap: "10px",
@@ -62,7 +66,8 @@ const Footer = () => {
 
   const copyright = {
     fontSize: "14px",
-    marginTop: "30px",
+    marginTop: "20px",
+    marginBottom: "20px"
   };
 
   const avatarRow = {
@@ -81,7 +86,7 @@ const Footer = () => {
     <footer style={footerStyle}>
       <div style={logoSection}>
         <img
-          src="/path-to-logo.png"
+          src={footerlog}
           alt="Gorilla Logo"
           style={logoImg}
         />
