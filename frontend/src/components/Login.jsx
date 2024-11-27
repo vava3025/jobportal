@@ -2,7 +2,8 @@ import { useState } from 'react';
 import '../components/CSS/LoginSignup.css';
 import { Link, useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
-
+import "./Home.css"; 
+import log from '../assets/orangelogo.png'
 
 function LoginSignup() {
     const [isActive, setIsActive] = useState(false);
@@ -52,23 +53,25 @@ function LoginSignup() {
 
     return (
         <>
+        {/* Navbar */}
         <header className="navbar">
-        <div className="logo">
-          <img src="/path/to/logo.png" alt="EcoCollect Logo" />
-          <span>JOB PORTAL</span>
-        </div>
-        <nav className="nav-links">
-          
-          <Link to={'/'}><a href="#home">Home</a></Link>
-          
-          
-          <Link to={'/'}><a href="#price-sheet">About us</a></Link>
-         
-         
-          <Link to={'/login'}> <a href="#about-us">Join</a></Link>
-        </nav>
-        
-      </header>
+          <div className="logo">
+            <img src={log} alt="JobSphere Logo"
+              style={{ width: 90, height: 90 }} />
+            <span style={{ fontWeight: 600, fontSize: 25 }}>JobSphere</span>
+          </div>
+          <nav className="nav-links">
+
+            <Link to={'/'}><a href="#home">Home</a></Link>
+
+
+            <Link to={'/aboutus'}><a href="#price-sheet">About us</a></Link>
+
+
+            <Link to={'/login'}> <a href="#about-us">Join</a></Link>
+          </nav>
+
+        </header>
         <div className={`container ${isActive ? 'active' : ''}`} id="container">
             {/* Sign-up form */}
             <div className="form-container sign-up">

@@ -21,7 +21,7 @@ const Home = () => {
             <Link to={'/'}><a href="#home">Home</a></Link>
 
 
-            <Link to={'/'}><a href="#price-sheet">About us</a></Link>
+            <Link to={'/aboutus'}><a href="#price-sheet">About us</a></Link>
 
 
             <Link to={'/login'}> <a href="#about-us">Join</a></Link>
